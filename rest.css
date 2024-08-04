@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.4;
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.182);
+    position: sticky;
+    background: white;
+    padding: 10px;
+    top: 0;
+    z-index: 50;
+}
+
+.navigation {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}    
+
+
+.bar-icon {
+    font-size:25px;
+}
+
+.hero1 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.offer{
+    background-color: rgba(0, 128, 0, 0.658);
+    padding: 7px 10px;
+    width: 220px;
+    text-align: center;
+    color: white;
+}
+
+.offer h4{
+    font-weight: 400;
+}
+
+.heading h1{
+    margin-top: 10px;
+    font-size: 70px;
+    line-height: 1.2;
+}
+
+.small-text {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight:600;
+}
+
+button {
+    font-size: 20px;
+    padding:10px;
+    margin-top: 15px;
+    border: none;
+    background-color: #ffc066;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.207);
+}
+
+.hero2 {
+    max-width: 1100px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+   
+}
+
+.card-container {
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:680px){
+    .card-container {
+        margin-top: 30px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+}
+
+.card {
+    min-height: 90px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.051);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.273);
+}
+
+.last1 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+
+.last1 h5{
+    background-color:  rgba(0, 128, 0, 0.658);
+    color: white;
+    width: 80px;
+    text-align:center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.last1 h4{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.last2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 50px;
+    
+}
+
+.last2-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+}
+
+.last2-grid img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.last2-grid img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+footer {
+    background-color: #ffc066;
+}
+
+.footer-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer h3 {
+    color: rgba(255, 255, 255, 0.949);
+}
+
+.main-link h3{
+    margin-bottom: 10px;
+
+}
+
+.support h3{
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.newsletter input{
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.newsletter h3{
+    margin-bottom: 5px;
+    
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
